@@ -1,0 +1,39 @@
+
+###
+
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{    
+    "username": "rahul123",
+    "password": "rahul@456"
+}
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{    
+    "username": "rahul123",
+    "password": "rahul@456"
+}
+
+
+###
+
+POST http://localhost:3000/postData
+Content-Type: application/json
+
+{
+    "id":112233,
+    "input_value":"testValue",
+    "is_checked":false,
+    "status":"test"
+}
+
+
+###
+
+GET http://localhost:3000/getData
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsMTIzIiwiaWF0IjoxNzAzMzA4NjQ0fQ.srt58tolCakatc8-MCO6Ffq-SEO6uuSrDI51qsgpWp4
