@@ -3,6 +3,8 @@ const path = require("path");
 const { open } = require("sqlite");
 const sqlite3 = require("sqlite3");
 const bcrypt = require("bcrypt");
+const cors = require("cors")
+app.use(cors())
 const jwt = require("jsonwebtoken");
 
 const dbPath = path.join(__dirname, "test.db");
